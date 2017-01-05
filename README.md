@@ -1,5 +1,9 @@
 # clawer
 
+安装依赖包：
+
+> npm install
+
 运行：
 
 > node 文件名.js
