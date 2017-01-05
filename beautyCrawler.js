@@ -59,7 +59,7 @@ function downImg(imgurl) {
 		});
 
 		res.on("end", function() {
-			var savePath = "../upload/" + narr[0]  + narr[1] + narr[2] + "_" + narr[4];
+			var savePath = "./upload/" + narr[0]  + narr[1] + narr[2] + "_" + narr[4];
 			fs.writeFile(savePath, imgData, "binary", function(err) {
 				if(err) {
 					console.log(err);
