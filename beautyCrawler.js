@@ -43,9 +43,9 @@ function getHtml(href, serach) {
 }
 
 /**
- * 下载图片
- * @param {String} imgurl：图片地址
- */
+* 下载图片
+* @param {String} imgurl：图片地址
+*/
 function downImg(imgurl) {
 	var narr = imgurl.replace("http://image.haha.mx/", "").split("/")
 
@@ -76,9 +76,9 @@ function downImg(imgurl) {
 	});
 }
 
-var pagemax = 10;    // 获取10页的内容
+var pagemax = 2;    // 获取要下载的页数的内容
 function start(){
-	console.log("开始获取图片连接");
+	console.log("--- 开始获取图片连接 ---");
 	for (var i = 1 ; i <= pagemax ; i++) {
 		getHtml(queryHref, i);
 	}
